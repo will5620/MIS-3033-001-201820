@@ -48,22 +48,59 @@ namespace Review_ConditionalsLooopsCollections
             //    }
             //}
 
-            int i = 100;
-            do
-            {
-                Console.WriteLine(i);
-                i--;
-            } while (i >= 0);
+            //int i = 100;
+            //do
+            //{
+            //    Console.WriteLine(i);
+            //    i--;
+            //} while (i >= 0);
 
-            while (i >= 0)
+            //while (i >= 0)
+            //{
+            //    Console.WriteLine(i);
+            //    i--;
+            //}
+
+            //string[] firstNames = new string[15];
+            //string[] lastNames = new string[15];
+            //firstNames[0] = "Adam";
+            //lastNames[0] = "Ackerman";
+            //firstNames[1] = "Steve";
+            //lastNames[1] = "Jobs";
+
+            //for (int i = 0; i < firstNames.Length; i++)
+            //{
+            //    //if (lastNames[i] == null && firstNames[i] == null)
+            //    //{
+
+            //    //}
+            //    //else
+            //    //{
+            //    //    Console.WriteLine($"{lastNames[i]}, {firstNames[i]}");
+            //    //}
+            //    if (lastNames[i] != null && firstNames[i] != null)
+            //    {
+            //        Console.WriteLine($"{lastNames[i]}, {firstNames[i]}");
+            //    }
+            //}
+
+            List<double> examScores = new List<double>();
+            examScores.Add(75.5);
+            examScores.Add(50);
+            examScores.Add(25.5);
+            examScores.Add(7);
+            examScores.Add(100);
+            double average = 0;
+            foreach (var item in examScores)
             {
-                Console.WriteLine(i);
-                i--;
+                average += item;
+                Console.WriteLine(item);
             }
 
-            
+            Console.WriteLine($"Your average exam score is {(average/examScores.Count).ToString("N2")}");
 
             Console.ReadKey();
         }
+
     }
 }
