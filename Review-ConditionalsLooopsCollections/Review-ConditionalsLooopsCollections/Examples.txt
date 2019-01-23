@@ -1,0 +1,15 @@
+﻿Loop
+	- Count up to
+	- Count down
+	- Odd / even
+	- count by X
+
+Collection
+	- parallel arrays with firstNames/lastNames
+	- collection of grades ... find average
+	- dictionary id & student name
+
+Methods
+	- Validation
+	- Calculations
+	- https://www.mathportal.org/mathformulas.php
