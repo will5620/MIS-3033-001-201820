@@ -12,10 +12,25 @@ namespace Review_Methods
         //static double sum = 0; Class level variable
         static void Main(string[] args)
         {
-            double result = Addition(5.5,2);
+            double result = Addition(5.5, 2);
             Console.WriteLine(result);
             double val1 = 10.5;
             double val2 = 1.5;
+
+            string s = "Hello World! :) ";
+            for (int i = s.Length - 1; i >= 0; i--)
+            {
+                if (i == 0)
+                {
+                    Console.WriteLine(s[i]);
+                }
+                else
+                {
+                    Console.Write(s[i]);
+
+                }
+            }
+
 
             Subtraction(val1, val2);
 
