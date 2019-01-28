@@ -84,20 +84,36 @@ namespace Review_ConditionalsLooopsCollections
             //    }
             //}
 
-            List<double> examScores = new List<double>();
-            examScores.Add(75.5);
-            examScores.Add(50);
-            examScores.Add(25.5);
-            examScores.Add(7);
-            examScores.Add(100);
-            double average = 0;
-            foreach (var item in examScores)
-            {
-                average += item;
-                Console.WriteLine(item);
-            }
+            //List<double> examScores = new List<double>();
+            //examScores.Add(75.5);
+            //examScores.Add(50);
+            //examScores.Add(25.5);
+            //examScores.Add(7);
+            //examScores.Add(100);
+            //double average = 0; // Accumulating variable
+            //foreach (var item in examScores)
+            //{
+            //    average += item;
+            //    Console.WriteLine(item);
+            //}
+            //Console.WriteLine($"Your average exam score is {(average/examScores.Count).ToString("N2")}");
 
-            Console.WriteLine($"Your average exam score is {(average/examScores.Count).ToString("N2")}");
+            Dictionary<int, double> studentGrades = new Dictionary<int, double>();
+            studentGrades.Add(1, 0.97);
+            studentGrades.Add(2, 0.47);
+            studentGrades.Add(0, .5);
+
+            Console.WriteLine(studentGrades[1].ToString("P2"));
+            if (studentGrades.ContainsKey(0) == true)
+            {
+                
+            }
+            else
+            {
+                studentGrades.Add(0, 1.0);
+            }
+            Console.WriteLine(studentGrades[0]);
+
 
             Console.ReadKey();
         }
