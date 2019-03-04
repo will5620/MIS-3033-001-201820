@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleClasses", "MultipleClasses\MultipleClasses.csproj", "{E6407BAB-7F96-4C7B-849F-0A746AC20EFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6407BAB-7F96-4C7B-849F-0A746AC20EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6407BAB-7F96-4C7B-849F-0A746AC20EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6407BAB-7F96-4C7B-849F-0A746AC20EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6407BAB-7F96-4C7B-849F-0A746AC20EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {713C171E-6FE9-47E0-8489-55FB5CA56A77}
+	EndGlobalSection
+EndGlobal

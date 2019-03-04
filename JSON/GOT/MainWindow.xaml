@@ -1,0 +1,18 @@
+﻿<Window x:Class="GOT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GOT"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="http://as01.epimg.net/betech/imagenes/2017/08/14/portada/1502702698_960981_1502702921_noticia_normal.jpg" 
+                        Stretch="UniformToFill">
+
+            </ImageBrush>
+        </Grid.Background>
+        <TextBlock x:Name="quote" Margin="559,10,10,201" TextWrapping="Wrap" Text="TextBlock"/>
+    </Grid>
+</Window>
