@@ -17,6 +17,10 @@ namespace MultipleClasses
         public Course()
         {
             //Fill out default values
+            CourseNumber = 0;
+            CourseName = string.Empty;
+            Subject    = string.Empty;
+            Instructor = string.Empty;
         }
 
         public override string ToString()
@@ -24,6 +28,7 @@ namespace MultipleClasses
             //Return a string in here that describes your course
             // for the user to see
             // DO NOT USE CONSOLE.WRITELINES !!!!!!!!!!!!!
+            return $"{CourseName} ({Subject}-{CourseNumber}) taught by {Instructor}";
         }
     }
 }

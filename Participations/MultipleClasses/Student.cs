@@ -16,7 +16,20 @@ namespace MultipleClasses
         public Student()
         {
             //fill out normal default values
+            FirstName = string.Empty; //" "
+            LastName = string.Empty;
+            StudentID = 0;
             Courses = new List<Course>();//create our new List
+        }
+
+        public void AddCourse(Course course)
+        {
+            Courses.Add(course);
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }
