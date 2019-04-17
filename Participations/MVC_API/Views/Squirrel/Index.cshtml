@@ -1,0 +1,16 @@
+﻿@model IEnumerable<MVC_API.Models.Squirrel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@foreach(var s in Model)
+{
+    <div class="squirrel">
+        <h1>@s.Name</h1>
+        <h2>@s.Species</h2>
+        
+        <img src=@s.Image al>
+    </div>
+}
