@@ -25,15 +25,15 @@ namespace MultipleClasses
         public MainWindow()
         {
             InitializeComponent();
-            var x = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Student.csv");
+
             string downloadsDirectory = @"‪C:\Users\acke9387\Downloads";
-            string studentFile = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Student.csv");
-            string courseFile = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Course.csv");
+            string studentFile = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads", "Student.csv");
+            string courseFile = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads", "Course.csv");
 
             if (File.Exists(studentFile) == false || File.Exists(courseFile) == false)
             {
                 MessageBox.Show("Please put the Student.csv and Course.csv file in your " + downloadsDirectory);
-                Close();
+                Environment.Exit(0);
             }
             else
             {

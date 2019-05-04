@@ -42,7 +42,8 @@ namespace GOT
                 {
                     var content = response.Content.ReadAsStringAsync().Result;
                     HerokuQuote q = JsonConvert.DeserializeObject<HerokuQuote>(content);
-                    quote.Inlines.Add()
+
+                    var x =JsonConvert.SerializeObject(q);
                 }
             }
         }
